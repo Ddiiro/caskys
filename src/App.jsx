@@ -1,10 +1,12 @@
+LandingPage
+import LandingPage from "./components/LandingPage"
 import "./index.css"
 
 function App() {
 
 return (
-  <div className="text-3xl font-bold underline" >
-      <h1>Hello World</h1>
+  <div className="w-11/12 m-auto mt-6 " >
+      <LandingPage/>
   </div>
 )
 }
