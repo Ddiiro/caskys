@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import SigninInput from './generic/SigninInput'
+import Input from './generic/Input'
+import Button from './generic/Button'
 
 function Section() {
     const [inputValue , setInputValue] = useState('')
@@ -38,7 +39,7 @@ function Section() {
                 <h1 className='text-5xl'>SIGN IN</h1>
                 <div>
                     <label htmlFor="">EMAIL</label>
-                    <SigninInput
+                    <Input
                     type="email"
                     input={inputValue}
                     onChange={handleInput}
@@ -46,15 +47,16 @@ function Section() {
                 </div>
                 <div>
                     <label htmlFor="">PASSWORD</label>
-                    <SigninInput
+                    <Input
                     type='password'
                     input={pass}
                     onChange={handlePasword}
                 />
                 </div>
-
-
-                <button className='bg-indigo-600 w-2/6 rounded-2xl m-auto p-2' onClick={click}>LOGIN</button>
+                <Button
+                    buttonName='LOGIN'
+                    handleClick={click}
+                />
             </div>
         </div>
         

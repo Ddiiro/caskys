@@ -1,4 +1,4 @@
-function SigninInput({input, onChange, type}) {
+function Input({input, onChange, type}) {
 
   return (
     <>
@@ -13,4 +13,4 @@ function SigninInput({input, onChange, type}) {
   )
 }
 
-export default SigninInput
+export default Input
